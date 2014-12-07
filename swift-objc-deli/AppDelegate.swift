@@ -19,7 +19,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func takeANumber(deli: [String], name: String) -> [String]
+    {
+        var resultDeli = deli
+        resultDeli.append(name)
 
+        println("You are number \(deli.count+1)")
+
+        return resultDeli
+    }
+
+    func nowServing(deli: [String]) -> [String]
+    {
+        var resultDeli = deli
+        let servingName = resultDeli.removeAtIndex(0)
+        println("Currently Serving \(servingName)")
+        return resultDeli
+    }
+
+    func printLine(deli: [String]) -> String
+    {
+        if deli.count == 0
+        {
+            return "The line is empty"
+        }
+
+        var result = "The line is currently: "
+        for var index = 0; index<deli.count; ++index
+        {
+            result+= "\(index+1). \(deli[index])"
+            if index != deli.count-1
+            {
+                result += " "
+            }
+        }
+        return result
+    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
