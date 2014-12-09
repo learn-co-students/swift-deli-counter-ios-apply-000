@@ -12,7 +12,10 @@
 		D84872011A34EAB800825B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84871FF1A34EAB800825B76 /* Main.storyboard */; };
 		D84872031A34EAB800825B76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84872021A34EAB800825B76 /* Images.xcassets */; };
 		D84872061A34EAB800825B76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84872041A34EAB800825B76 /* LaunchScreen.xib */; };
-		D84872121A34EAB800825B76 /* swift_objc_deliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84872111A34EAB800825B76 /* swift_objc_deliTests.swift */; };
+		D84872391A372D7D00825B76 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84872321A372D6A00825B76 /* Quick.framework */; };
+		D848723A1A372D8000825B76 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84872231A372D6000825B76 /* Nimble.framework */; };
+		D848723D1A372E2D00825B76 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D848723C1A372E2D00825B76 /* AppDelegateSpec.swift */; };
+		D848723F1A372F4C00825B76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84871FB1A34EAB800825B76 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +25,62 @@
 			proxyType = 1;
 			remoteGlobalIDString = D84871F51A34EAB800825B76;
 			remoteInfo = "swift-objc-deli";
+		};
+		D84872221A372D6000825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848721B1A372D6000825B76 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		D84872241A372D6000825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848721B1A372D6000825B76 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		D84872261A372D6000825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848721B1A372D6000825B76 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
+		};
+		D84872281A372D6000825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848721B1A372D6000825B76 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-OSXTests";
+		};
+		D84872311A372D6A00825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848722A1A372D6A00825B76 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-OSX";
+		};
+		D84872331A372D6A00825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848722A1A372D6A00825B76 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-OSXTests";
+		};
+		D84872351A372D6A00825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848722A1A372D6A00825B76 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		D84872371A372D6A00825B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D848722A1A372D6A00825B76 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -35,7 +94,10 @@
 		D84872051A34EAB800825B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D848720B1A34EAB800825B76 /* swift-objc-deliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-objc-deliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84872101A34EAB800825B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D84872111A34EAB800825B76 /* swift_objc_deliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_objc_deliTests.swift; sourceTree = "<group>"; };
+		D848721B1A372D6000825B76 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D848722A1A372D6A00825B76 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D848723B1A372E2D00825B76 /* swift-objc-deliTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-objc-deliTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D848723C1A372E2D00825B76 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D848723A1A372D8000825B76 /* Nimble.framework in Frameworks */,
+				D84872391A372D7D00825B76 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +162,11 @@
 		D848720E1A34EAB800825B76 /* swift-objc-deliTests */ = {
 			isa = PBXGroup;
 			children = (
-				D84872111A34EAB800825B76 /* swift_objc_deliTests.swift */,
+				D848722A1A372D6A00825B76 /* Quick.xcodeproj */,
+				D848721B1A372D6000825B76 /* Nimble.xcodeproj */,
 				D848720F1A34EAB800825B76 /* Supporting Files */,
+				D848723C1A372E2D00825B76 /* AppDelegateSpec.swift */,
+				D848723B1A372E2D00825B76 /* swift-objc-deliTests-Bridging-Header.h */,
 			);
 			path = "swift-objc-deliTests";
 			sourceTree = "<group>";
@@ -110,6 +177,28 @@
 				D84872101A34EAB800825B76 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D848721C1A372D6000825B76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D84872231A372D6000825B76 /* Nimble.framework */,
+				D84872251A372D6000825B76 /* NimbleTests.xctest */,
+				D84872271A372D6000825B76 /* Nimble.framework */,
+				D84872291A372D6000825B76 /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D848722B1A372D6A00825B76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D84872321A372D6A00825B76 /* Quick.framework */,
+				D84872341A372D6A00825B76 /* Quick-OSXTests.xctest */,
+				D84872361A372D6A00825B76 /* Quick.framework */,
+				D84872381A372D6A00825B76 /* Quick-iOSTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +268,16 @@
 			mainGroup = D84871ED1A34EAB800825B76;
 			productRefGroup = D84871F71A34EAB800825B76 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D848721C1A372D6000825B76 /* Products */;
+					ProjectRef = D848721B1A372D6000825B76 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = D848722B1A372D6A00825B76 /* Products */;
+					ProjectRef = D848722A1A372D6A00825B76 /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D84871F51A34EAB800825B76 /* swift-objc-deli */,
@@ -186,6 +285,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D84872231A372D6000825B76 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = D84872221A372D6000825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D84872251A372D6000825B76 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = D84872241A372D6000825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D84872271A372D6000825B76 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = D84872261A372D6000825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D84872291A372D6000825B76 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = D84872281A372D6000825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D84872321A372D6A00825B76 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = D84872311A372D6A00825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D84872341A372D6A00825B76 /* Quick-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-OSXTests.xctest";
+			remoteRef = D84872331A372D6A00825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D84872361A372D6A00825B76 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = D84872351A372D6A00825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D84872381A372D6A00825B76 /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = D84872371A372D6A00825B76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D84871F41A34EAB800825B76 /* Resources */ = {
@@ -221,7 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84872121A34EAB800825B76 /* swift_objc_deliTests.swift in Sources */,
+				D848723F1A372F4C00825B76 /* AppDelegate.swift in Sources */,
+				D848723D1A372E2D00825B76 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -367,6 +527,8 @@
 				INFOPLIST_FILE = "swift-objc-deliTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-deliTests/swift-objc-deliTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-objc-deli.app/swift-objc-deli";
 			};
 			name = Debug;
@@ -375,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -382,6 +545,7 @@
 				INFOPLIST_FILE = "swift-objc-deliTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-deliTests/swift-objc-deliTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-objc-deli.app/swift-objc-deli";
 			};
 			name = Release;
