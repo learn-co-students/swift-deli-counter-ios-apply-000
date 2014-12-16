@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var result = "The line is currently: "
         for var index = 0; index<deli.count; ++index
         {
-            result+= "\(index+1). \(deli[index])"
+            result += "\(index+1). \(deli[index])"
             if index != deli.count-1
             {
                 result += " "
