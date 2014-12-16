@@ -85,14 +85,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D84871F61A34EAB800825B76 /* swift-objc-deli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-objc-deli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84871F61A34EAB800825B76 /* swift-deli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-deli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84871FA1A34EAB800825B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84871FB1A34EAB800825B76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D84871FD1A34EAB800825B76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D84872001A34EAB800825B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D84872021A34EAB800825B76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D84872051A34EAB800825B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D848720B1A34EAB800825B76 /* swift-objc-deliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-objc-deliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D848720B1A34EAB800825B76 /* swift-deliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-deliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84872101A34EAB800825B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D848721B1A372D6000825B76 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D848722A1A372D6A00825B76 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -132,8 +132,8 @@
 		D84871F71A34EAB800825B76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D84871F61A34EAB800825B76 /* swift-objc-deli.app */,
-				D848720B1A34EAB800825B76 /* swift-objc-deliTests.xctest */,
+				D84871F61A34EAB800825B76 /* swift-deli.app */,
+				D848720B1A34EAB800825B76 /* swift-deliTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D84871F51A34EAB800825B76 /* swift-objc-deli */ = {
+		D84871F51A34EAB800825B76 /* swift-deli */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D84872151A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-objc-deli" */;
+			buildConfigurationList = D84872151A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-deli" */;
 			buildPhases = (
 				D84871F21A34EAB800825B76 /* Sources */,
 				D84871F31A34EAB800825B76 /* Frameworks */,
@@ -216,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = "swift-objc-deli";
+			name = "swift-deli";
 			productName = "swift-objc-deli";
-			productReference = D84871F61A34EAB800825B76 /* swift-objc-deli.app */;
+			productReference = D84871F61A34EAB800825B76 /* swift-deli.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D848720A1A34EAB800825B76 /* swift-objc-deliTests */ = {
+		D848720A1A34EAB800825B76 /* swift-deliTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D84872181A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-objc-deliTests" */;
+			buildConfigurationList = D84872181A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-deliTests" */;
 			buildPhases = (
 				D84872071A34EAB800825B76 /* Sources */,
 				D84872081A34EAB800825B76 /* Frameworks */,
@@ -234,9 +234,9 @@
 			dependencies = (
 				D848720D1A34EAB800825B76 /* PBXTargetDependency */,
 			);
-			name = "swift-objc-deliTests";
+			name = "swift-deliTests";
 			productName = "swift-objc-deliTests";
-			productReference = D848720B1A34EAB800825B76 /* swift-objc-deliTests.xctest */;
+			productReference = D848720B1A34EAB800825B76 /* swift-deliTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -257,7 +257,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D84871F11A34EAB800825B76 /* Build configuration list for PBXProject "swift-objc-deli" */;
+			buildConfigurationList = D84871F11A34EAB800825B76 /* Build configuration list for PBXProject "swift-deli" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -280,8 +280,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				D84871F51A34EAB800825B76 /* swift-objc-deli */,
-				D848720A1A34EAB800825B76 /* swift-objc-deliTests */,
+				D84871F51A34EAB800825B76 /* swift-deli */,
+				D848720A1A34EAB800825B76 /* swift-deliTests */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +389,7 @@
 /* Begin PBXTargetDependency section */
 		D848720D1A34EAB800825B76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D84871F51A34EAB800825B76 /* swift-objc-deli */;
+			target = D84871F51A34EAB800825B76 /* swift-deli */;
 			targetProxy = D848720C1A34EAB800825B76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -497,7 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "swift-objc-deli/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "swift-deli";
 			};
 			name = Debug;
 		};
@@ -507,7 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "swift-objc-deli/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "swift-deli";
 			};
 			name = Release;
 		};
@@ -527,6 +527,7 @@
 				INFOPLIST_FILE = "swift-objc-deliTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "swift-deliTests";
 				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-deliTests/swift-objc-deliTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-objc-deli.app/swift-objc-deli";
@@ -545,6 +546,7 @@
 				INFOPLIST_FILE = "swift-objc-deliTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "swift-deliTests";
 				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-deliTests/swift-objc-deliTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-objc-deli.app/swift-objc-deli";
 			};
@@ -553,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D84871F11A34EAB800825B76 /* Build configuration list for PBXProject "swift-objc-deli" */ = {
+		D84871F11A34EAB800825B76 /* Build configuration list for PBXProject "swift-deli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D84872131A34EAB800825B76 /* Debug */,
@@ -562,21 +564,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D84872151A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-objc-deli" */ = {
+		D84872151A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-deli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D84872161A34EAB800825B76 /* Debug */,
 				D84872171A34EAB800825B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D84872181A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-objc-deliTests" */ = {
+		D84872181A34EAB800825B76 /* Build configuration list for PBXNativeTarget "swift-deliTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D84872191A34EAB800825B76 /* Debug */,
 				D848721A1A34EAB800825B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
