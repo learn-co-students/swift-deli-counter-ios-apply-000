@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-import swift_objc_deli
+import swift_deli
 
 class AppDelegateSpec: QuickSpec {
     override func spec() {

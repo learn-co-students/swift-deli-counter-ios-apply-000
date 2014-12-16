@@ -86,18 +86,18 @@
 
 /* Begin PBXFileReference section */
 		D84871F61A34EAB800825B76 /* swift-deli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-deli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D84871FA1A34EAB800825B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D84871FB1A34EAB800825B76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D84871FD1A34EAB800825B76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D84871FA1A34EAB800825B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../swift-deli/Info.plist"; sourceTree = "<group>"; };
+		D84871FB1A34EAB800825B76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../swift-deli/AppDelegate.swift"; sourceTree = "<group>"; };
+		D84871FD1A34EAB800825B76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../swift-deli/ViewController.swift"; sourceTree = "<group>"; };
 		D84872001A34EAB800825B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D84872021A34EAB800825B76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D84872021A34EAB800825B76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../swift-deli/Images.xcassets"; sourceTree = "<group>"; };
 		D84872051A34EAB800825B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D848720B1A34EAB800825B76 /* swift-deliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-deliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D84872101A34EAB800825B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84872101A34EAB800825B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../swift-deliTests/Info.plist"; sourceTree = "<group>"; };
 		D848721B1A372D6000825B76 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D848722A1A372D6A00825B76 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
-		D848723B1A372E2D00825B76 /* swift-objc-deliTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-objc-deliTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		D848723C1A372E2D00825B76 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
+		D848723B1A372E2D00825B76 /* swift-objc-deliTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swift-objc-deliTests-Bridging-Header.h"; path = "../swift-deliTests/swift-objc-deliTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D848723C1A372E2D00825B76 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegateSpec.swift; path = "../swift-deliTests/AppDelegateSpec.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +123,8 @@
 		D84871ED1A34EAB800825B76 = {
 			isa = PBXGroup;
 			children = (
-				D84871F81A34EAB800825B76 /* swift-objc-deli */,
-				D848720E1A34EAB800825B76 /* swift-objc-deliTests */,
+				D84871F81A34EAB800825B76 /* swift-deli */,
+				D848720E1A34EAB800825B76 /* swift-deliTests */,
 				D84871F71A34EAB800825B76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D84871F81A34EAB800825B76 /* swift-objc-deli */ = {
+		D84871F81A34EAB800825B76 /* swift-deli */ = {
 			isa = PBXGroup;
 			children = (
 				D84871FB1A34EAB800825B76 /* AppDelegate.swift */,
@@ -148,6 +148,7 @@
 				D84872041A34EAB800825B76 /* LaunchScreen.xib */,
 				D84871F91A34EAB800825B76 /* Supporting Files */,
 			);
+			name = "swift-deli";
 			path = "swift-objc-deli";
 			sourceTree = "<group>";
 		};
@@ -159,7 +160,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D848720E1A34EAB800825B76 /* swift-objc-deliTests */ = {
+		D848720E1A34EAB800825B76 /* swift-deliTests */ = {
 			isa = PBXGroup;
 			children = (
 				D848722A1A372D6A00825B76 /* Quick.xcodeproj */,
@@ -168,6 +169,7 @@
 				D848723C1A372E2D00825B76 /* AppDelegateSpec.swift */,
 				D848723B1A372E2D00825B76 /* swift-objc-deliTests-Bridging-Header.h */,
 			);
+			name = "swift-deliTests";
 			path = "swift-objc-deliTests";
 			sourceTree = "<group>";
 		};
@@ -401,6 +403,7 @@
 				D84872001A34EAB800825B76 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "../swift-deli";
 			sourceTree = "<group>";
 		};
 		D84872041A34EAB800825B76 /* LaunchScreen.xib */ = {
@@ -409,6 +412,7 @@
 				D84872051A34EAB800825B76 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = "../swift-deli";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -495,7 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "swift-objc-deli/Info.plist";
+				INFOPLIST_FILE = "swift-deli/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "swift-deli";
 			};
@@ -505,7 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "swift-objc-deli/Info.plist";
+				INFOPLIST_FILE = "swift-deli/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "swift-deli";
 			};
@@ -524,11 +528,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "swift-objc-deliTests/Info.plist";
+				INFOPLIST_FILE = "swift-deliTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "swift-deliTests";
-				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-deliTests/swift-objc-deliTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-deliTests/swift-objc-deliTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-objc-deli.app/swift-objc-deli";
 			};
@@ -543,11 +547,11 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "swift-objc-deliTests/Info.plist";
+				INFOPLIST_FILE = "swift-deliTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "swift-deliTests";
-				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-deliTests/swift-objc-deliTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-deliTests/swift-objc-deliTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-objc-deli.app/swift-objc-deli";
 			};
 			name = Release;
