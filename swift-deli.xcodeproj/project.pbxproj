@@ -10,7 +10,6 @@
 		31D7E6671A407C3000546766 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E6661A407C3000546766 /* Info.plist */; };
 		31D7E66F1A407C4D00546766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E66B1A407C4D00546766 /* AppDelegate.swift */; };
 		31D7E6701A407C4D00546766 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E66C1A407C4D00546766 /* Images.xcassets */; };
-		31D7E6711A407C4D00546766 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E66D1A407C4D00546766 /* Info.plist */; };
 		31D7E6721A407C4D00546766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E66E1A407C4D00546766 /* ViewController.swift */; };
 		31D7E6771A407C5500546766 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E6731A407C5500546766 /* LaunchScreen.xib */; };
 		31D7E6781A407C5500546766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E6751A407C5500546766 /* Main.storyboard */; };
@@ -358,7 +357,6 @@
 				31D7E6781A407C5500546766 /* Main.storyboard in Resources */,
 				31D7E6671A407C3000546766 /* Info.plist in Resources */,
 				31D7E6701A407C4D00546766 /* Images.xcassets in Resources */,
-				31D7E6711A407C4D00546766 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
