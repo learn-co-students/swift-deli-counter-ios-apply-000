@@ -1,7 +1,4 @@
----
-  tags: methods, arrays, iteration
-  languages: swift
----
+
 
 # Deli Counter - Take a Number
 
