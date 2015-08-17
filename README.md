@@ -11,7 +11,7 @@ At the beginning of the day, the deli is empty and is represented by an empty ar
 Example: 
 
 
-Write all of your code in `FISAppDelegate.swift`. 
+Write all of your code in `AppDelegate.swift`. 
 
 1. Build a method that a new customer will use when entering the deli. The method, `takeANumber`, should accept the new person's name, the current line in `[String]` format, and return the updated line. Also, the method should `println` their position in line. And don't go being too programmer-y and give them their index. These are normal people. If they are 7th in line, tell them that. Don't get their hopes up by telling them they are number 6 in line.
 
