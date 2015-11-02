@@ -13,8 +13,9 @@
 		31D7E6721A407C4D00546766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E66E1A407C4D00546766 /* ViewController.swift */; };
 		31D7E6771A407C5500546766 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E6731A407C5500546766 /* LaunchScreen.xib */; };
 		31D7E6781A407C5500546766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E6751A407C5500546766 /* Main.storyboard */; };
-		31D7E68B1A40818A00546766 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E6681A407C3700546766 /* AppDelegateSpec.swift */; };
+		31D7E68B1A40818A00546766 /* SandboxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E6681A407C3700546766 /* SandboxSpec.swift */; };
 		31D7E68C1A40819A00546766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E66B1A407C4D00546766 /* AppDelegate.swift */; };
+		4D1075E31BE7BFEC00381ED0 /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1075E21BE7BFEC00381ED0 /* Sandbox.swift */; };
 		640DB43E93D4922E9066E3BB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87630AC0251F608C71D2AE7B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		31D7E6661A407C3000546766 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "swift-deliTests/Info.plist"; sourceTree = SOURCE_ROOT; };
-		31D7E6681A407C3700546766 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegateSpec.swift; path = "swift-deliTests/AppDelegateSpec.swift"; sourceTree = SOURCE_ROOT; };
+		31D7E6681A407C3700546766 /* SandboxSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SandboxSpec.swift; path = "swift-deliTests/SandboxSpec.swift"; sourceTree = SOURCE_ROOT; };
 		31D7E6691A407C3700546766 /* swift-deliTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "swift-deliTests-Bridging-Header.h"; path = "swift-deliTests/swift-deliTests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		31D7E66B1A407C4D00546766 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "swift-deli/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		31D7E66C1A407C4D00546766 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "swift-deli/Images.xcassets"; sourceTree = SOURCE_ROOT; };
@@ -38,6 +39,7 @@
 		31D7E66E1A407C4D00546766 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "swift-deli/ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		31D7E6741A407C5500546766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "swift-deli/Base.lproj/LaunchScreen.xib"; sourceTree = SOURCE_ROOT; };
 		31D7E6761A407C5500546766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "swift-deli/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		4D1075E21BE7BFEC00381ED0 /* Sandbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sandbox.swift; sourceTree = SOURCE_ROOT; };
 		7D8049C3BC834CD52C6D7E12 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		822C8E8036A7D4C7A2DB02FA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		87630AC0251F608C71D2AE7B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,29 +106,30 @@
 		D84871F81A34EAB800825B76 /* swift-deli */ = {
 			isa = PBXGroup;
 			children = (
-				31D7E6731A407C5500546766 /* LaunchScreen.xib */,
-				31D7E6751A407C5500546766 /* Main.storyboard */,
 				31D7E66B1A407C4D00546766 /* AppDelegate.swift */,
-				31D7E66C1A407C4D00546766 /* Images.xcassets */,
-				31D7E66D1A407C4D00546766 /* Info.plist */,
-				31D7E66E1A407C4D00546766 /* ViewController.swift */,
-				D84871F91A34EAB800825B76 /* Supporting Files */,
+				4D1075E21BE7BFEC00381ED0 /* Sandbox.swift */,
+				D84871F91A34EAB800825B76 /* Resources */,
 			);
 			name = "swift-deli";
 			path = "swift-objc-deli";
 			sourceTree = "<group>";
 		};
-		D84871F91A34EAB800825B76 /* Supporting Files */ = {
+		D84871F91A34EAB800825B76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				31D7E6731A407C5500546766 /* LaunchScreen.xib */,
+				31D7E6751A407C5500546766 /* Main.storyboard */,
+				31D7E66C1A407C4D00546766 /* Images.xcassets */,
+				31D7E66D1A407C4D00546766 /* Info.plist */,
+				31D7E66E1A407C4D00546766 /* ViewController.swift */,
 			);
-			name = "Supporting Files";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D848720E1A34EAB800825B76 /* swift-deliTests */ = {
 			isa = PBXGroup;
 			children = (
-				31D7E6681A407C3700546766 /* AppDelegateSpec.swift */,
+				31D7E6681A407C3700546766 /* SandboxSpec.swift */,
 				31D7E6691A407C3700546766 /* swift-deliTests-Bridging-Header.h */,
 				D848720F1A34EAB800825B76 /* Supporting Files */,
 			);
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D7E6721A407C4D00546766 /* ViewController.swift in Sources */,
+				4D1075E31BE7BFEC00381ED0 /* Sandbox.swift in Sources */,
 				31D7E66F1A407C4D00546766 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D7E68C1A40819A00546766 /* AppDelegate.swift in Sources */,
-				31D7E68B1A40818A00546766 /* AppDelegateSpec.swift in Sources */,
+				31D7E68B1A40818A00546766 /* SandboxSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

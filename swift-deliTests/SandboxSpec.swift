@@ -1,8 +1,10 @@
+//  SandboxSpec.swift
+
 import Quick
 import Nimble
-import swift_deli
+@testable import swift_deli
 
-class AppDelegateSpec: QuickSpec {
+class SandboxSpec: QuickSpec {
     override func spec() {
         let appDelegate : AppDelegate = AppDelegate()
         let deliLine = ["Ada","Joe"]
