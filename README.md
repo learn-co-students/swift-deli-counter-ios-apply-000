@@ -20,5 +20,3 @@ Write all of your code in `AppDelegate.swift`.
 3. Build a method `line` that returns people their current place in line (returned as an `String`). If there is nobody in line, it should return "The line is currently empty."
 
 <a href='https://learn.co/lessons/swift-deli-counter' data-visibility='hidden'>View this lesson on Learn.co</a>
-
-<a href='https://learn.co/lessons/swift-deli-counter' data-visibility='hidden'>View this lesson on Learn.co</a>
