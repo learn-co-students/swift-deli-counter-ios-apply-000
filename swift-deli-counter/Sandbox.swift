@@ -18,20 +18,22 @@ func stringForDeliLine(deliLine: [String]) -> String {
     return result
 }
     
-func addNameTo(name: String, var deliLine: [String]) -> [String] {
-    deliLine.append(name)
-    print("Welcome \(name)! You are number \(deliLine.count) in line.")
-    return deliLine
+func addName(name: String, toDeliLine deliLine: [String]) -> [String] {
+    var newDeliLine = deliLine
+    newDeliLine.append(name)
+    print("Welcome \(name)! You are number \(newDeliLine.count) in line.")
+    return newDeliLine
 }
         
-func serveNextCustomerInDeliLine(var deliLine: [String]) -> [String] {
-    
-    if deliLine.count > 0 {
-        let nextCustomer = deliLine.removeFirst()
+func serveNextCustomerInDeliLine(deliLine: [String]) -> [String] {
+    var newDeliLine = deliLine
+
+    if newDeliLine.count > 0 {
+        let nextCustomer = newDeliLine.removeFirst()
         print("Now serving \(nextCustomer)")
     } else {
         print("The line is currently empty.")
     }
-    return deliLine
+    return newDeliLine
 }
 
