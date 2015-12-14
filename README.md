@@ -28,3 +28,5 @@ Open the `swift-deli-counter.xcworkspace` and navigate to the `Sandbox.swift` fi
 
 3. Declare a function named `serveNextCustomerInDeliLine(_:)` which takes one argument, an array of strings, and returns an array of strings. The function should remove the first name from the array (there is a `removeFirst()` array method), print a message for this "next customer" telling them it is their turn, and returning the array with the customer's name removed.
   * If you run the tests at this point, you should notice that calling `removeFirst()` on an empty array causes a crash. Use an `if` statement to guard against this case.
+
+<a href='https://learn.co/lessons/swift-deli-counter' data-visibility='hidden'>View this lesson on Learn.co</a>
