@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  swift-objc-deli
+//  swift-deli-counter
 //
-//  Created by Joe Burgess on 12/7/14.
-//  Copyright (c) 2014 Flatiron School. All rights reserved.
+//  Created by Mark Murray on 11/2/15.
+//  Copyright © 2015 Flatiron School. All rights reserved.
 //
 
 import UIKit

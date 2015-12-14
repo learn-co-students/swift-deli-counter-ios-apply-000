@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:swift-deli.xcodeproj">
+      location = "self:swift-deli-counter.xcodeproj">
    </FileRef>
 </Workspace>
