@@ -26,6 +26,7 @@ func stringForDeliLine(_ deliLine:[String]) -> String {
     return readout
 }
 
+// would like to know why it is necessary for var readout = String() and not String, or readout: [String] ??
 
 //#4
 
@@ -35,7 +36,7 @@ func addName(_ newCustomer: String, var deliLine: [String]) -> [String] {
    return deliLine
 }
 
-//#5
+//#5 & #6
 
 func serveNExtCustomerInDeliLine(var _ deliLine: [String]) -> [String]{
     if !deliLine.isEmpty {
