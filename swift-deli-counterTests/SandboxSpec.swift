@@ -19,7 +19,7 @@ class SandboxSpec: QuickSpec {
         describe("stringForDeliLine(_:)") {
             it("should return a string saying the line is empty when the argument array is empty") {
                 
-                expect(stringForDeliLine(empty)).to(match("The line is currently empty."))
+                expect(stringForDeliLine(empty)).to(match("The line is currently empty"))
             }
             
             it("should return a string describing the line with three names") {
@@ -35,23 +35,23 @@ class SandboxSpec: QuickSpec {
             }
         }
         
-        describe("addName(_:toDeliLine:)") {
+        describe("addName(_:y:)") {
             it("adds the name 'Al' to an empty array") {
-                let result = addName("Al", toDeliLine: empty)
+                let result = addName("Al", y: empty)
                 let expected = ["Al"]
                 
                 expect(result).to(equal(expected))
             }
             
             it("adds the name 'Dan' to the end of the 'precollege' array") {
-                let result = addName("Dan", toDeliLine: precollege)
+                let result = addName("Dan", y: precollege)
                 let expected = ["Victoria", "Danny", "Lyel", "Dan"]
                 
                 expect(result).to(equal(expected))
             }
             
             it("adds the name 'Mark' to the end of the 'ios' array") {
-                let result = addName("Mark", toDeliLine: ios)
+                let result = addName("Mark", y: ios)
                 let expected = ["Joe", "Tim", "Jim", "Tom", "Mark"]
                 
                 expect(result).to(equal(expected))
