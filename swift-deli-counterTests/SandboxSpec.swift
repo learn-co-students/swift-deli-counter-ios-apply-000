@@ -19,7 +19,7 @@ class SandboxSpec: QuickSpec {
         describe("stringForDeliLine(_:)") {
             it("should return a string saying the line is empty when the argument array is empty") {
                 
-                expect(stringForDeliLine(empty)).to(match("The line is currently empty."))
+                expect(stringForDeliLine(empty)).to(match("The line is currently empty"))
             }
             
             it("should return a string describing the line with three names") {
