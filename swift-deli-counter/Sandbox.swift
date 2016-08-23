@@ -8,10 +8,11 @@ import Foundation
 
  */
 
+
 //1
 
-let namess: [String] = ["Al", "Eric", "Marie"]
-let other_names: [String] = ["Joe", "Bob"]
+let names: [String] = ["Al", "Eric", "Marie"]
+//let other_names: [String] = ["Joe", "Bob"]
 
 func stringForDeliLine(names:[String]) -> String {
     var answer: String = ""
@@ -27,7 +28,7 @@ func stringForDeliLine(names:[String]) -> String {
     return answer
 }
 
-//stringForDeliLine(namess)
+//print(stringForDeliLine(names))
 
 
 
@@ -39,15 +40,16 @@ var name: String = "Joe"
 var deliLine: [String] = ["Al", "Eric", "Marie"]
 
 
-func addName(x: String, var y: [String]) -> [String] {
-    y.append(x)
+func addName(x: String, y: [String]) -> [String] {
+    var new = y
+        new.append(x)
     
-    for (index, name) in y.enumerate() {
+    for (index, name) in new.enumerate() {
         print ("Welcome \(name), you are \(index + 1) in line")
     }
-    return y
+    return new
 }
-    //    print(addName(name, y: deliLine))
+    //   addName(name, y: deliLine)
 
 
 
@@ -55,13 +57,17 @@ func addName(x: String, var y: [String]) -> [String] {
 
 //3
 
-func serveNextCustomerInDeliLine(var x:[String]) -> [String]{
-    if !x.isEmpty {
-        var person = x[0]
-        x.removeFirst()
+func serveNextCustomerInDeliLine(x:[String]) -> [String]{
+    var new = x
+    
+    if !new.isEmpty {
+        let person = new[0]
+        new.removeFirst()
         print ("hello, \(person), it is your turn")
+    } else {
+        print ("The line is currently empty.")
     }
-    return x
+    return new
 }
 
-//    print(serveNextCustomerInDeliLine(deliLine))
+//print(serveNextCustomerInDeliLine(deliLine))
