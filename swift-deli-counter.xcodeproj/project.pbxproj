@@ -16,6 +16,7 @@
 		4D2ACEA21BE7C67F005BC4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2ACEA11BE7C67F005BC4FF /* Assets.xcassets */; };
 		4D2ACEA51BE7C67F005BC4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2ACEA31BE7C67F005BC4FF /* LaunchScreen.storyboard */; };
 		4D2ACEB01BE7C67F005BC4FF /* swift_deli_counterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2ACEAF1BE7C67F005BC4FF /* swift_deli_counterTests.swift */; };
+		72F6C3A31D6F6489002D1D01 /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F4CEC1BE7C9D6004F377E /* Sandbox.swift */; };
 		CA16D9301126A4359590D3A5 /* Pods_swift_deli_counterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B23336787BEE554FF07E70 /* Pods_swift_deli_counterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -353,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0F4CEF1BE7CA0C004F377E /* SandboxSpec.swift in Sources */,
+				72F6C3A31D6F6489002D1D01 /* Sandbox.swift in Sources */,
 				4D2ACEB01BE7C67F005BC4FF /* swift_deli_counterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
