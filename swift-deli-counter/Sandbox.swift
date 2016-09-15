@@ -13,7 +13,7 @@ func stringForDeliLine(deliLine: [String]) -> String {
     var resultString = "The line is:\n"
     
     for (element,value) in deliLine.enumerate() {
-        resultString += ("\(element + 1). \(value)\n")
+        resultString += "\(element + 1). \(value)\n"
     }
     
     return resultString
@@ -35,9 +35,8 @@ func addName(name: String, toDeliLine: [String]) -> [String] {
 // fn removes first element of array if array is not empty and returns array.
 func serveNextCustomerInDeliLine(deliLineIn: [String]) -> [String] {
     var deliLine = deliLineIn
-    if (!deliLine.isEmpty) {
-        print ("\(deliLine[0]) your the next customer. How can I help you?")
-        deliLine.removeFirst()
+    if !deliLine.isEmpty {
+        print ("\(deliLine.removeFirst()) your the next customer. How can I help you?")
     }
     return deliLine
 }
