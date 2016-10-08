@@ -4,15 +4,17 @@
 use_frameworks!
 
 def testing_pods
-  pod 'Quick', '~> 0.9'
+  pod 'Quick'
   pod 'Nimble', '~> 4.1'
 end
 
 target 'swift-deli-counter' do
-
+    pod 'Quick'
 end
 
 target 'swift-deli-counterTests' do
-  testing_pods
+  pod 'Quick'
 end
 
+target 'SandboxSpec.swift' do
+end

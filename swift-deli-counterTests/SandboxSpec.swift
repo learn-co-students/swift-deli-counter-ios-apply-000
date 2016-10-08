@@ -1,7 +1,9 @@
 //  SandboxSpec.swift
 
+import Foundation
 import Quick
-import Nimble
+import NImble
+
 @testable import swift_deli_counter
 
 class SandboxSpec: QuickSpec {
