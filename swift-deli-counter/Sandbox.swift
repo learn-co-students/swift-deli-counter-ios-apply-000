@@ -8,17 +8,17 @@ import Foundation
 
  */
 
-
 func stringForDeliLine(_ line: Array<String>) -> String {
-    print("The line is:")
     if line.isEmpty {
         return "The line is currently empty."
     }
+    print("The line is:")
     for x in 0..<line.count {
         print("\(x+1). \(line[x])")
     }
     return String(describing: line)
 }
+
 
 func addName(_ name: String, toDeliLine: Array<String>) -> Array<String> {
     var toDeliLine = toDeliLine
