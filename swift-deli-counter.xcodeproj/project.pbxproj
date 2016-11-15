@@ -13,7 +13,7 @@
 		4D2ACEA01BE7C67F005BC4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2ACE9E1BE7C67F005BC4FF /* Main.storyboard */; };
 		4D2ACEA21BE7C67F005BC4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2ACEA11BE7C67F005BC4FF /* Assets.xcassets */; };
 		4D2ACEA51BE7C67F005BC4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2ACEA31BE7C67F005BC4FF /* LaunchScreen.storyboard */; };
-		5B3311EE1DD0E3BB00F3D11D /* DeliCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3311ED1DD0E3BB00F3D11D /* DeliCounterTests.swift */; };
+		6FA182A41DDB7E9300805829 /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F4CEC1BE7C9D6004F377E /* Sandbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,7 +152,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Flatiron School";
 				TargetAttributes = {
 					4D2ACE961BE7C67F005BC4FF = {
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B3311EE1DD0E3BB00F3D11D /* DeliCounterTests.swift in Sources */,
+				6FA182A41DDB7E9300805829 /* Sandbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +267,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -311,8 +313,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -331,6 +335,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
