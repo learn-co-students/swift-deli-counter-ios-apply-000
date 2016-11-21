@@ -12,8 +12,8 @@ import XCTest
 class DeliCounterTests: XCTestCase {
     
     var empty: [String] = []
-    var precollege: [String] = []
-    var ios: [String] = []
+    var precollege: [String] = ["Victoria","Danny","Lyel"]
+    var ios: [String] = ["Joe","Tim","Jim","Tom"]
 
     
     override func setUp() {
@@ -39,15 +39,15 @@ class DeliCounterTests: XCTestCase {
     
     func testAddNameToDeliLine() {
         
-        let result = addName("Al", toDeliLine: empty)
+        let result = addName("Al", empty)
         let expected = ["Al"]
         XCTAssertEqual(result, expected)
         
-        let result2 = addName("Dan", toDeliLine: precollege)
+        let result2 = addName("Dan", precollege)
         let expected2 = ["Victoria", "Danny", "Lyel", "Dan"]
         XCTAssertEqual(result2, expected2)
 
-        let result3 = addName("Mark", toDeliLine: ios)
+        let result3 = addName("Mark", ios)
         let expected3 = ["Joe", "Tim", "Jim", "Tom", "Mark"]
         XCTAssertEqual(result3, expected3)
 
