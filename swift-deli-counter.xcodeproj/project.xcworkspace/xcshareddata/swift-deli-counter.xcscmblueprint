@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2DAF3BF2E1E5FD4EB0A5B495CBAC66BFAA4FA0C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2DAF3BF2E1E5FD4EB0A5B495CBAC66BFAA4FA0C2" : 9223372036854775807,
+    "E00D0E0E7192FFAD17E5EDA35EE370AC1A29B3EA" : 9223372036854775807,
+    "BC00B0370BF6CE50CF8D6B743E30CE9D4B9706A5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2BE20790-88A2-4DAA-A717-A65679F34CC6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2DAF3BF2E1E5FD4EB0A5B495CBAC66BFAA4FA0C2" : "swift-deli-counter-ios-apply-000\/",
+    "E00D0E0E7192FFAD17E5EDA35EE370AC1A29B3EA" : "",
+    "BC00B0370BF6CE50CF8D6B743E30CE9D4B9706A5" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "swift-deli-counter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "swift-deli-counter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/arturlan\/swift-deli-counter-ios-apply-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2DAF3BF2E1E5FD4EB0A5B495CBAC66BFAA4FA0C2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/arturlan\/arturlan.github.io.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC00B0370BF6CE50CF8D6B743E30CE9D4B9706A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/arturlan\/swift-HelloToTheUniverse-lab-ios-apply-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E00D0E0E7192FFAD17E5EDA35EE370AC1A29B3EA"
+    }
+  ]
+}
