@@ -7,13 +7,13 @@
 //
 
 import XCTest
-
+@testable import swift_deli_counter
 
 class DeliCounterTests: XCTestCase {
     
     var empty: [String] = []
-    var precollege: [String] = []
-    var ios: [String] = []
+    var precollege: [String] = ["Victoria","Danny","Lyel"]
+    var ios: [String] = ["Joe","Tim","Jim","Tom"]
 
     
     override func setUp() {
@@ -27,27 +27,27 @@ class DeliCounterTests: XCTestCase {
     
     func testStringForDeliLine() {
         
-        XCTAssertEqual(stringForDeliLine(empty), "The line is currently empty.")
+        XCTAssertEqual(stringForDeliLine(deliLine: empty), "The line is currently empty.")
         
         let expected = "The line is:\n1. Victoria\n2. Danny\n3. Lyel"
-        XCTAssertEqual(stringForDeliLine(precollege), expected)
+        XCTAssertEqual(stringForDeliLine(deliLine: precollege), expected)
         
         let expectediOS = "The line is:\n1. Joe\n2. Tim\n3. Jim\n4. Tom"
-        XCTAssertEqual(stringForDeliLine(ios), expectediOS)
+        XCTAssertEqual(stringForDeliLine(deliLine: ios), expectediOS)
         
     }
     
     func testAddNameToDeliLine() {
         
-        let result = addName("Al", toDeliLine: empty)
+        let result = addName(name: "Al", deliLine: empty)
         let expected = ["Al"]
         XCTAssertEqual(result, expected)
         
-        let result2 = addName("Dan", toDeliLine: precollege)
+        let result2 = addName(name: "Dan", deliLine: precollege)
         let expected2 = ["Victoria", "Danny", "Lyel", "Dan"]
         XCTAssertEqual(result2, expected2)
 
-        let result3 = addName("Mark", toDeliLine: ios)
+        let result3 = addName(name: "Mark", deliLine: ios)
         let expected3 = ["Joe", "Tim", "Jim", "Tom", "Mark"]
         XCTAssertEqual(result3, expected3)
 
@@ -55,15 +55,15 @@ class DeliCounterTests: XCTestCase {
     
     func testServeNextCustomer() {
         
-        let result = serveNextCustomerInDeliLine(empty)
+        let result = serveNextCustomerInDeliLine(deliLine: empty)
         XCTAssertEqual(result.isEmpty, true)
         
-        let result2 = serveNextCustomerInDeliLine(precollege)
+        let result2 = serveNextCustomerInDeliLine(deliLine: precollege)
         let expected2 = ["Danny", "Lyel"]
         XCTAssertEqual(result2, expected2)
         
         
-        let result3 = serveNextCustomerInDeliLine(ios)
+        let result3 = serveNextCustomerInDeliLine(deliLine: ios)
         let expected3 = ["Tim", "Jim", "Tom"]
         XCTAssertEqual(result3, expected3)
         
