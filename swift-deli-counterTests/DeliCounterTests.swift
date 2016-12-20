@@ -12,8 +12,8 @@ import XCTest
 class DeliCounterTests: XCTestCase {
     
     var empty: [String] = []
-    var precollege: [String] = []
-    var ios: [String] = []
+    var precollege: [String] = ["Victoria", "Danny", "Lyel"]
+    var ios: [String] = ["Joe", "Tim", "Jim", "Tom"]
 
     
     override func setUp() {
