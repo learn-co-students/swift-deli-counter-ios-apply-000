@@ -29,8 +29,8 @@ func serveNextCustomerInDeliLine(_ removeFirstName: [String]) -> [String] {
     if removeFirstName.isEmpty{
         return removeFirstName
     } else {
-        let newCustomer = newLine.removeFirst()
-        print ("Welcome \(newCustomer)! It is now your turn!")
+        newLine.removeFirst()
+        print ("Welcome \(newLine[0])! It is now your turn!")
     }
     
     return newLine
