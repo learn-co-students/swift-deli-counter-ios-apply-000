@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import swift_deli_counter
 
 
 class DeliCounterTests: XCTestCase {
