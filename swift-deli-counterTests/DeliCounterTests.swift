@@ -27,27 +27,27 @@ class DeliCounterTests: XCTestCase {
     
     func testStringForDeliLine() {
         
-        XCTAssertEqual(stringForDeliLine(deliline: empty), "The line is currently empty.")
+        XCTAssertEqual(stringForDeliLine(deliLine: empty), "The line is currently empty.")
         
         let expected = "The line is:\n1. Victoria\n2. Danny\n3. Lyel"
-        XCTAssertEqual(stringForDeliLine(deliline: precollege), expected)
+        XCTAssertEqual(stringForDeliLine(deliLine: precollege), expected)
         
         let expectediOS = "The line is:\n1. Joe\n2. Tim\n3. Jim\n4. Tom"
-        XCTAssertEqual(stringForDeliLine(deliline: ios), expectediOS)
+        XCTAssertEqual(stringForDeliLine(deliLine: ios), expectediOS)
         
     }
     
     func testAddNameToDeliLine() {
         
-        let result = addName(name: "Al", deliLine: empty)
+        let result = addName(name: "Al", deliline: empty)
         let expected = ["Al"]
         XCTAssertEqual(result, expected)
         
-        let result2 = addName(name: "Dan", deliLine: precollege)
+        let result2 = addName(name: "Dan", deliline: precollege)
         let expected2 = ["Victoria", "Danny", "Lyel", "Dan"]
         XCTAssertEqual(result2, expected2)
 
-        let result3 = addName(name: "Mark", deliLine: ios)
+        let result3 = addName(name: "Mark", deliline: ios)
         let expected3 = ["Joe", "Tim", "Jim", "Tom", "Mark"]
         XCTAssertEqual(result3, expected3)
 
@@ -73,37 +73,37 @@ class DeliCounterTests: XCTestCase {
     
 }
 
-func stringForDeliLine (deliline: [String]) -> String {
-    print(deliline)
-    
-    if deliline.count == 0 {
-        return "The line is currently empty."
+func stringForDeliLine(deliLine: [String]) -> String {
+    guard !deliLine.isEmpty else {return "The line is currently empty." }
+    var readout = "The line is:"
+    for (index,name) in deliLine.enumerated() {
+        readout.append("\n\(index + 1). \(name)")
     }
-    var returnvalue = "The line is:"
-    for i in 0 ..<  deliline.count {
-        let numberinline = i + 1
-        returnvalue += "\n\(numberinline). \(deliline[i])"
-        print(i)
-    }
-    return returnvalue
-    
+    return readout
 }
 
-func addName (name: String, deliLine: [String]) -> [String] {
-    var newDeliLine = deliLine
+
+func addName(name: String, deliline: [String]) -> [String] {
+    var newDeliLine = deliline
     newDeliLine.append(name)
-    print("Hi \(name) Your place in line is \(newDeliLine.count) ")
+    print("Hi and welcome \(name), you are \(newDeliLine.count) in line.")
     return newDeliLine
+}
+func serveNextCustomerInDeliLine( deliLine: [String]) -> [String] {
+    
+    var newDeliLine = deliLine
+    if newDeliLine.count > 0
+    {
+        if let nextcustomer = newDeliLine.first {
+            print("Hi \(nextcustomer) it is now your turn")
+        }
+        newDeliLine.removeFirst()
+        return newDeliLine
+        
+    } else {
+        return newDeliLine
+    }
     
 }
 
-func serveNextCustomerInDeliLine (deliLine: [String]) -> [String] {
-    var newDeliLine = deliLine
-    if !newDeliLine.isEmpty {
-        newDeliLine.removeFirst()
-    print("\(deliLine[0]), it is your turn")
-    }
-    return newDeliLine
-    
-}
 
