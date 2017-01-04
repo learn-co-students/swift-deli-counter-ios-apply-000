@@ -1,32 +1,66 @@
-# Swift — Deli Counter
+![](http://i.imgur.com/bs4NYnJ.png)
 
-## Objectives
+> We cannot solve our problems with the same thinking we used when we created them. ~[Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein)
 
-1. Write functions that use control flow statements.
+# Instructions
 
-## Instructions
+In the year 2050, you've awoken from a dream that seemed all to real. Einstein made a prediction that we would one day find life somewhere else (besides Earth). This life would be just like ours, and most importantly.. this other species would have delis (according to him).
 
-Open the `swift-deli-counter.xcworkspace` and navigate to the `Sandbox.swift` file. You will need to declare all three functions in order to get the tests to build (`⌘` `U`). If you wish to solve each function one at a time, call your functions from the AppDelegate with your own test data and run the scheme with `⌘` `R`.
+If we ever come in contact with this species, we want to provide them with an application that makes running delis that much easier. Writing Swift code!
 
-1. Declare a function named `stringForDeliLine(_:)` that takes one argument, an array of strings, and returns a string. Write its implementation so that it provides a readout of the names in the argument array. 
-  * For an array containing the names "Al", "Chris", and "Zach" it should return a string as follows:
+Open the `SpaceDeli.xcodeproj` file. Then locate the `SpaceDeli.swift` file, this is where you will be writing your code. You should notice that we've created a variable for you named `line` of type [`String`] and have given it a default value of [ ], which is an empty `Array`. You can interact with this variable in the functions you will be creating below.
 
-        ```
-        The line is:
-        1. Al
-        2. Chris
-        3. Zach
-        ```  
-   **Hint:** *Remember that the newline character can be written into a string using* `\n`.
-   * For an empty array, the function should return a string that reads:  
+**1.** Create a function, `description()` that takes in no arguments. This function should return a `String`. In your implementation of this function, you should look to produce a `String` value that represents all of the people waiting in line (in numbered order). For example, if our `line` variable above consisted of the following individuals:  
+* Isaac
+* Neil
+* Carl
 
-        ```
-        The line is currently empty.
-        ```
+We would expect the `String` value we get back from this function to look like the following:
 
-2. Declare a function named `addName(_:toDeliLine:)` that takes two arguments, a string `name` and an array of strings `deliLine`, and returns an array of strings. This method should add the `name` string to the `deliLine` array, print a welcome message for the new customer telling them their place in line (starting from one, not zero), and return the altered `deliLine` array.
+```
+The line is:
+1. Isaac
+2. Neil
+3. Carl
+```
+If the `line` variable is empty, then the `String` value that should be returned is the following:
 
-3. Declare a function named `serveNextCustomerInDeliLine(_:)` which takes one argument, an array of strings, and returns an array of strings. The function should remove the first name from the array (there is a `removeFirst()` array method), print a message for this "next customer" telling them it is their turn, and returning the array with the customer's name removed.
-  * If you run the tests at this point, you should notice that calling `removeFirst()` on an empty array causes a crash. Use an `if` statement to guard against this case.
+```
+The line is currently empty.
+```
 
-<a href='https://learn.co/lessons/swift-deli-counter' data-visibility='hidden'>View this lesson on Learn.co</a>
+**2.** Create a function, `add(name:)` which takes in one argument labeled `name` of type `String`. This function should return back a `String` value. In your implementation of this function, you should first add this `name` variable to the `line` variable. After doing so you should produce a `String` value making sure you adhere to the following conditions. If this person who we've just added to the `line` variable _is_ the first person in line, then you should return back the following `String` value (x should replaced here with `name`s value):
+
+```
+Welcome x. You're first in line!
+```
+
+If the individual walking in is being added to a line which _already_ has people on it, then you should return back the following `String` value (y represents that persons actual number in line):
+
+```
+Welcome x. You're number y in line.
+```
+
+**3.** Create a function, `serveNextCustomer()` which takes in no arguments. It should return back a `String` value. In your implementation of this function, you should adhere to the following conditions.
+
+If the `line` variable is empty, than you should return back the following `String`:
+```
+The line is empty.
+```
+
+If the `line` variable isn't empty (in that there's people to be served), you should remove the person that is next in line. If our `line` variable consisted of the following individuals, ["Rey", "Beth", "Jess"] then the person who is to be served next is "Rey" as she is first in line.
+
+The `String` value that should be returned in this scenario is the following:
+
+```
+Rey is ready to be served, please come forward.
+```
+
+---
+
+Albert Einstein never said anything about delis in space, this is something I made up. But if you want to learn about something he _did_ predict, you can watch Neil deGrasse Tyson explain  it here:
+
+[![Space](http://img.youtube.com/vi/5_4N1ozld-s/0.jpg)](https://www.youtube.com/watch?v=5_4N1ozld-s "Space")
+
+
+
