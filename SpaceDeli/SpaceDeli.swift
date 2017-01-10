@@ -12,25 +12,31 @@ class SpaceDeli {
     
     var line: [String] = []
     
+    func description() -> String {
+        guard !line.isEmpty  else { return "The line is currently empty." }
+        var newString = "The line is:"
+        for (index,person) in line.enumerated() {
+            newString +=  "\n\(index + 1). \(person)"
+        }
+        return newString
+    }
     
+    func add(name: String) -> String {
+        line.append(name)
+        if name == line[0]{
+            return "Welcome \(name). You're first in line!"
+        } else {
+            return "Welcome \(name). You're number \(line.count) in line."
+        }
+    }
     
-    // Question #1
- 
-    
-    
-    
-    
-    // Question #2
+    func serveNextCustomer() -> String {
+        if line.isEmpty {
+            return "The line is empty."
+        } else {
+            let name = line.remove(at: 0)
+            return "\(name) is ready to be served, please come forward."
+        }
+    }
 
-    
-    
-    
-    
-    
-    // Question #3
-
-    
-    
-    
-    
 }
