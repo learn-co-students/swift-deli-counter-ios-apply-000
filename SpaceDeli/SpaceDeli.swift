@@ -53,9 +53,9 @@ class SpaceDeli {
     func description() -> String {
         var returnedString = String ()
         if !line.isEmpty {
-            print("The line is:")
+            returnedString = "The line is:"
             for (index, person) in line.enumerated() {
-                print("\(index + 1). \(person)")
+                returnedString += "\n\(index + 1). \(person)"
             }
         } else {
             if line.isEmpty {
@@ -65,7 +65,6 @@ class SpaceDeli {
         print(returnedString)
         return returnedString
     }
- 
 
     
     // Question #2
